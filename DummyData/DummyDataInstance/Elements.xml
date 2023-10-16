@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="DummyData"
+                OnQuickLaunch="TRUE"
+                TemplateType="100"
+                Url="Lists/DummyData"
+                Description="My List Instance">
+
+    <Data>
+      <Rows>
+            <Row>
+              <Field Name="Title">Item 1</Field>
+              <Field Name="ChoiceColumn">Option 1</Field>
+              <Field Name="MultiPersonColumn">mohamed@dgtresor.onmicrosft.com;john@dgtresor.onmicrosft.com</Field>
+              <Field Name="TextColumn">Text 1</Field>
+              <Field Name="DateTimeColumn">2023-04-16T00:00:00Z</Field>
+            </Row>
+            <Row>
+              <Field Name="Title">Item 2</Field>
+              <Field Name="ChoiceColumn">Option 2</Field>
+              <Field Name="MultiPersonColumn">jocelyn@dgtresor.onmicrosft.com</Field>
+              <Field Name="TextColumn">Text 2</Field>
+              <Field Name="DateTimeColumn">2023-04-17T00:00:00Z</Field>
+            </Row>
+            <Row>
+              <Field Name="Title">Item 3</Field>
+              <Field Name="ChoiceColumn">Option 3</Field>
+              <Field Name="MultiPersonColumn">mohamed@dgtresor.onmicrosft.com;jocelyn@dgtresor.onmicrosft.com</Field>
+              <Field Name="TextColumn">Text 3</Field>
+              <Field Name="DateTimeColumn">2023-04-18T00:00:00Z</Field>
+            </Row>
+            <Row>
+              <Field Name="Title">Item 4</Field>
+              <Field Name="ChoiceColumn">Option 1</Field>
+              <Field Name="MultiPersonColumn">john@dgtresor.onmicrosft.com</Field>
+              <Field Name="TextColumn">Text 4</Field>
+              <Field Name="DateTimeColumn">2023-04-19T00:00:00Z</Field>
+            </Row>
+            <Row>
+              <Field Name="Title">Item 5</Field>
+              <Field Name="ChoiceColumn">Option 2</Field>
+              <Field Name="MultiPersonColumn">mohamed@dgtresor.onmicrosft.com;john@dgtresor.onmicrosft.com;jocelyn@dgtresor.onmicrosft.com</Field>
+              <Field Name="TextColumn">Text 5</Field>
+              <Field Name="DateTimeColumn">2023-04-20T00:00:00Z</Field>
+            </Row>
+            <Row>
+              <Field Name="Title">Item 6</Field>
+              <Field Name="ChoiceColumn">Option 3</Field>
+              <Field Name="MultiPersonColumn">mohamed@dgtresor.onmicrosft.com</Field>
+              <Field Name="TextColumn">Text 6</Field>
+              <Field Name="DateTimeColumn">2023-04-21T00:00:00Z</Field>
+            </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

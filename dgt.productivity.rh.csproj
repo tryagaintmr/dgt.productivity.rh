@@ -1,0 +1,228 @@
+﻿<Project ToolsVersion="17.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{791A7741-EEF7-41F9-8A81-9204549827FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dgt.productivity.rh</RootNamespace>
+    <AssemblyName>dgt.productivity.rh</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.1</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.1</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{6769c594-83fa-446e-b422-e0cdb3a53641}</AppFeaturePartId>
+    <WspPartId>{482e7084-ab00-439e-9584-0a53d54fd648}</WspPartId>
+    <WorkflowPartId>{a71f2257-aa3a-4016-a508-0546e70badab}</WorkflowPartId>
+    <CspkgPartId>{d01c6451-42ab-47f5-bd14-bc21beac8181}</CspkgPartId>
+    <SqlPackagePartId>{77f922c1-44ba-4e48-8c52-f0efcef15de4}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="App\dist\index.html" />
+    <Content Include="App\Elements.xml" />
+    <Content Include="DummyData\DummyDataInstance\Elements.xml" />
+    <Content Include="DummyData\Elements.xml" />
+    <Content Include="DummyData\Schema.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="gulpfile.js" />
+    <Content Include="karma.conf.js" />
+    <Content Include="proxy\server.js" />
+    <Content Include="proxy\static\img\favicon.ico" />
+    <Content Include="proxy\static\index.html" />
+    <Content Include="proxy\static\scripts\script.js" />
+    <Content Include="proxy\static\styles\style.css" />
+    <Content Include="Settings\Elements.xml" />
+    <Content Include="Settings\Schema.xml" />
+    <Content Include="Settings\SettingsInstance\Elements.xml" />
+    <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\home\home.page.html" />
+    <Content Include="src\app\shared\pages\page-error\page-error.component.html" />
+    <Content Include="src\app\shared\pages\page-not-found\page-not-found.component.html" />
+    <Content Include="src\assets\icon\favicon.png" />
+    <Content Include="src\assets\shapes.svg" />
+    <Content Include="src\index.html" />
+    <None Include=".browserslistrc" />
+    <None Include=".editorconfig" />
+    <None Include=".eslintrc.json" />
+    <None Include="angular.json" />
+    <None Include="App\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f8b06ac4-5435-4158-bcc7-59d032420577}</SharePointProjectItemId>
+    </None>
+    <None Include="capacitor.config.json" />
+    <None Include="DummyData\DummyDataInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aee541a8-26e2-4836-b20b-3578a738c0db}</SharePointProjectItemId>
+    </None>
+    <None Include="DummyData\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d2028cfe-a104-49dc-bd53-d1e2c7366683}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{2e3f97a9-9f9d-4f7a-bb49-b3207f6e90a9}</FeatureId>
+    </None>
+    <None Include="ionic.config.json" />
+    <None Include="package-lock.json" />
+    <None Include="package.json" />
+    <None Include="packages.config" />
+    <None Include="post-build.ps1" />
+    <None Include="proxy\package-lock.json" />
+    <None Include="proxy\package.json" />
+    <None Include="proxy\README.md" />
+    <None Include="Settings\SettingsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54f36b41-6946-4bd7-9240-7076d489bce2}</SharePointProjectItemId>
+    </None>
+    <None Include="Settings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eef1b199-5594-422b-b4f0-3b3a2ab2f6a8}</SharePointProjectItemId>
+    </None>
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{30bdbc8f-884b-4d45-9778-5557b6c22649}</SharePointProjectItemId>
+    </None>
+    <None Include="src\app\app.component.scss" />
+    <None Include="src\app\home\home.page.scss" />
+    <None Include="src\app\shared\pages\page-error\page-error.component.scss" />
+    <None Include="src\app\shared\pages\page-not-found\page-not-found.component.scss" />
+    <None Include="src\app\shared\services\interceptor\db.json" />
+    <None Include="src\global.scss" />
+    <None Include="src\theme\variables.scss" />
+    <None Include="tsconfig.app.json" />
+    <None Include="tsconfig.json" />
+    <None Include="tsconfig.spec.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1c81b336-95be-4f50-86ad-b39d95e60213}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{09fbbe2e-b0dc-4d81-a639-c9e12ae81579}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\AppInstallation\AppInstallation.feature">
+      <FeatureId>{75c1e2cc-5340-4bda-9867-75e74e234824}</FeatureId>
+    </None>
+    <None Include="Features\AppInstallation\AppInstallation.Template.xml">
+      <DependentUpon>AppInstallation.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\core\core.module.ts" />
+    <TypeScriptCompile Include="src\app\home\helper.ts" />
+    <TypeScriptCompile Include="src\app\home\home-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\home\home.module.ts" />
+    <TypeScriptCompile Include="src\app\home\home.page.spec.ts" />
+    <TypeScriptCompile Include="src\app\home\home.page.ts" />
+    <TypeScriptCompile Include="src\app\home\IInterfaces.ts" />
+    <TypeScriptCompile Include="src\app\home\services.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\home\services.service.ts" />
+    <TypeScriptCompile Include="src\app\home\state.repository.ts" />
+    <TypeScriptCompile Include="src\app\shared\common\datetimeHelper.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\common\datetimeHelper.ts" />
+    <TypeScriptCompile Include="src\app\shared\common\stringHelper.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\common\stringHelper.ts" />
+    <TypeScriptCompile Include="src\app\shared\common\urlHelper.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\common\urlHelper.ts" />
+    <TypeScriptCompile Include="src\app\shared\constants\appSettings.ts" />
+    <TypeScriptCompile Include="src\app\shared\constants\data.mock.ts" />
+    <TypeScriptCompile Include="src\app\shared\constants\globals.ts" />
+    <TypeScriptCompile Include="src\app\shared\constants\index.ts" />
+    <TypeScriptCompile Include="src\app\shared\models\Enums.ts" />
+    <TypeScriptCompile Include="src\app\shared\models\IError.ts" />
+    <TypeScriptCompile Include="src\app\shared\models\index.ts" />
+    <TypeScriptCompile Include="src\app\shared\models\ISPContext.ts" />
+    <TypeScriptCompile Include="src\app\shared\models\ISPUser.ts" />
+    <TypeScriptCompile Include="src\app\shared\models\IWebOperation.ts" />
+    <TypeScriptCompile Include="src\app\shared\pages\page-error\page-error.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\pages\page-error\page-error.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\pages\page-not-found\page-not-found.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\pages\page-not-found\page-not-found.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\pipes\enum-to-array.pipe.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\pipes\enum-to-array.pipe.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\adal.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\adal.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\context.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\context.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\interceptor\http-mock-request-interceptor.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\interceptor\http-mock-request-interceptor.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\interceptor\http-request-interceptor.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\interceptor\http-request-interceptor.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\logger\global-error-handler.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\logger\global-error-handler.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\logger\logger.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\logger\logger.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\logger\seq-client.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\logger\seq-client.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\scripts-loader\script.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\scripts-loader\script.store.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\ui-state.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\ui-state.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\shared.module.ts" />
+    <TypeScriptCompile Include="src\environments\environment.int.ts" />
+    <TypeScriptCompile Include="src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="src\environments\environment.stag.ts" />
+    <TypeScriptCompile Include="src\environments\environment.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\polyfills.ts" />
+    <TypeScriptCompile Include="src\test.ts" />
+    <TypeScriptCompile Include="src\zone-flags.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="proxy\config\" />
+    <Folder Include="src\app\shared\directives\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PreBuildEvent>npm run-script build-prod
+powershell -ExecutionPolicy Unrestricted $(ProjectDir)post-build.ps1 $(ProjectDir)App\dist $(ProjectDir)App\Elements.xml $(ProjectPath)
+</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

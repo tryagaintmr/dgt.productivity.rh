@@ -1,0 +1,36 @@
+<ion-app>
+  <ion-split-pane when="sm" contentId="main-content">
+    <ion-menu contentId="main-content">
+      <ion-header [translucent]="true">
+        <ion-toolbar>
+          <ion-title>APP</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content>
+        <ion-list>
+          <ion-list-header (click)="router.navigateByUrl('crud')">Normal CRUD</ion-list-header>
+          <ion-list-header (click)="router.navigateByUrl('elf')">State Management CRUD</ion-list-header>
+          <ion-list-header (click)="router.navigateByUrl('form')">Automatic Form</ion-list-header>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-toggle>
+              <ion-button>
+                <ion-icon slot="icon-only" name="menu"></ion-icon>
+              </ion-button>
+            </ion-menu-toggle>
+          </ion-buttons>
+          <ion-title>App name</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <!-- // your app content -->
+      <ion-router-outlet></ion-router-outlet>
+    </div>
+  </ion-split-pane>
+</ion-app>

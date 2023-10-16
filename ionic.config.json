@@ -1,0 +1,7 @@
+{
+  "name": "MonApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

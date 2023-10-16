@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="09fbbe2e-b0dc-4d81-a639-c9e12ae81579" solutionId="09fbbe2e-b0dc-4d81-a639-c9e12ae81579" resetWebServer="false" sharePointProductVersion="16.0" name="SharePointAddInTemplateDG" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="75c1e2cc-5340-4bda-9867-75e74e234824" />
+    <featureReference itemId="2e3f97a9-9f9d-4f7a-bb49-b3207f6e90a9" />
+  </features>
+</package>

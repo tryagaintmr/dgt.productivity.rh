@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module>
+    <File Path="App\dist\index.html" Url="App/dist/index.html" ReplaceContent="TRUE" />
+  </Module>
+</Elements>
